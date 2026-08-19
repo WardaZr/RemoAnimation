@@ -1,0 +1,258 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: "Poppins", serif;
+}
+
+body{
+    margin: 0px;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+}
+.img{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-clip: content-box;
+    transition: 0.5s linear;
+}
+
+#foto1{
+    background-image: url('assets/Hoshi\ -\ seventeen.jpg');
+}
+
+#foto1:hover{
+    background-image: url('assets/download\ \(1\).jpg');
+}
+
+.img-body{
+    text-align: center;
+}
+
+#foto2{
+    background-image: url('assets/th\ \(1\).jpg');
+}
+
+#foto2:hover{
+    background-image: url('assets/066883900_1459160646-maxresdefault__YouTube_.webp');
+}
+
+#volume{
+    background-color: darkred; 
+    border-radius: 50px; 
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
+    font-size: 30px;
+    padding: 20px;
+}
+
+#volume i{
+    color: white;
+}
+
+/*--------------------------------------------------------*/
+
+section{
+    margin: 10rem 6rem;
+}
+
+section h1{
+    font-size: 4rem;
+}
+
+section img, section video{
+    width: 100%;
+}
+.navbar{
+    align-content: center;
+}
+nav{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 99;
+}
+
+.navbar a{
+    margin-left: 30px;
+    color: black;
+    text-decoration: none;
+    transition: 0.5s linear;
+}
+
+.navbar a:hover{
+    color: darkred;
+    font-size: 20px;
+}
+
+.cover, .card-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.cover h1{
+    font-size: 7rem;
+    margin: 30px;
+    align-content: center;
+    animation: blinks 5s linear 0s infinite;
+}
+
+#remo{
+    width: 25%;
+    height: 40rem;
+    background-image: url('assets/remo-idle/1.png');
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    animation-name: idle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+header blockquote{
+    animation: inhale 20s linear 0s infinite;
+}
+
+.profil{
+    border-radius: 50%;
+    width: 20%;
+    height: fit-content;
+}
+
+.container-body{
+    align-content: center;
+    margin-left: 30px;
+}
+
+#bg-leaf{
+    width: 100%;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    padding: 15rem;
+    animation: leaf-bg 5s normal 1s infinite;
+    z-index: 3;
+}
+
+.typing-anim::after{
+    content: '';
+    animation: typing 10s linear 0s infinite;
+}
+
+a{
+    color: rgb(108, 108, 108);
+    text-decoration: none;
+    padding: 10px;
+}
+@keyframes idle{
+    0%{
+        background-image: url('assets/remo-idle/1.png');
+    }
+    15%{
+        background-image: url('assets/remo-idle/2.png');
+    }
+    30%{
+        background-image: url('assets/remo-idle/3.png');
+    }
+    45%{
+        background-image: url('assets/remo-idle/4.png');
+    }
+    60%{
+        background-image: url('assets/remo-idle/5.png');
+    }
+    75%{
+        background-image: url('assets/remo-idle/6.png');
+    }
+    85%{
+        background-image: url('assets/remo-idle/7.png');
+    }
+    95%{
+        background-image: url('assets/remo-idle/8.png');
+    }
+    100%{
+        background-image: url('assets/remo-idle/1.png');
+    }
+}
+
+@keyframes inhale{
+    0%{letter-spacing: 10px;}
+    50%{letter-spacing: 20px;}
+    100%{letter-spacing: 10px;}
+}
+
+@keyframes blinks{
+    0%{color: black;}
+    50%{color: darkred;}
+    100%{color: black;}
+}
+
+@keyframes leaf-bg {
+    0%{background-color: rgba(255, 255, 255, 0);}
+    3%{background-image: url('assets/leaf/1.png');}
+    6%{background-image: url('assets/leaf/2.png');}
+    9%{background-image: url('assets/leaf/3.png');}
+    12%{background-image: url('assets/leaf/4.png');}
+    15%{background-image: url('assets/leaf/5.png');}
+    18%{background-image: url('assets/leaf/6.png');}
+    21%{background-image: url('assets/leaf/7.png');}
+    24%{background-image: url('assets/leaf/8.png');}
+    27%{background-image: url('assets/leaf/9.png');}
+    30%{background-image: url('assets/leaf/10.png');}
+    32%{background-image: url('assets/leaf/11.png');}
+    34%{background-image: url('assets/leaf/12.png');}
+    36%{background-image: url('assets/leaf/13.png');}
+    39%{background-image: url('assets/leaf/14.png');}
+    42%{background-image: url('assets/leaf/15.png');}
+    45%{background-image: url('assets/leaf/16.png');}
+    48%{background-image: url('assets/leaf/17.png');}
+    50%{background-image: url('assets/leaf/18.png');}
+    52%{background-image: url('assets/leaf/19.png');}
+    54%{background-image: url('assets/leaf/20.png');}
+    56%{background-image: url('assets/leaf/21.png');}
+    68%{background-image: url('assets/leaf/22.png');}
+    60%{background-image: url('assets/leaf/23.png');}
+    62%{background-image: url('assets/leaf/24.png');}
+    64%{background-image: url('assets/leaf/25.png');}
+    66%{background-image: url('assets/leaf/26.png');}
+    68%{background-image: url('assets/leaf/27.png');}
+    71%{background-image: url('assets/leaf/28.png');}
+    74%{background-image: url('assets/leaf/29.png');}
+    76%{background-image: url('assets/leaf/30.png');}
+    78%{background-image: url('assets/leaf/31.png');}
+    82%{background-image: url('assets/leaf/32.png');}
+    85%{background-image: url('assets/leaf/33.png');}
+    88%{background-image: url('assets/leaf/34.png');}
+    91%{background-image: url('assets/leaf/35.png');}
+    94%{background-image: url('assets/leaf/36.png');}
+    97%{background-image: url('assets/leaf/37.png');}
+    100%{background-color: rgba(255, 255, 255, 0);}
+}
+
+@keyframes typing {
+    0%{content: '';}
+    1%{content: 'b';}
+    2%{content: 'by';}
+    3%{content: 'by ';}
+    4%{content: 'by W';}
+    5%{content: 'by Wa';}
+    6%{content: 'by War';}
+    7%{content: 'by Ware';}
+    8%{content: 'by Wareu';}
+    10%{content: 'by Wareu.';}
+    30%{content: 'by Wareu..';}
+    60%{content: 'by Wareu...';}
+    100%{content: '';}
+}
